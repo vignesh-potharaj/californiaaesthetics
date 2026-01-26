@@ -344,6 +344,11 @@ body {
   font-size: 14px;
   letter-spacing: 1px;
   border-radius: 4px;
+  transition: opacity 0.25s ease;
+}
+
+.services-btn:hover {
+  opacity: 0.85;
 }
 
 /* =====================
