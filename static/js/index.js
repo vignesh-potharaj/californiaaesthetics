@@ -17,3 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+/* GALLERY TAP BEHAVIOR (MOBILE-FIRST) */
+const galleryImages = document.querySelectorAll(".gallery-grid img");
+
+galleryImages.forEach((img) => {
+  img.addEventListener("click", () => {
+    // Remove active from others
+    galleryImages.forEach((other) => {
+      if (other !== img) other.classList.remove("active");
+    });
+
+    // Toggle current
+    img.classList.toggle("active");
+  });
+});
