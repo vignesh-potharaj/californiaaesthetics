@@ -459,3 +459,95 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* =====================
+   OWNER SECTION
+===================== */
+.owner {
+  padding: 100px 0;
+  background: var(--black);
+}
+
+.owner-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TEXT */
+.owner-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(30px, 4vw, 42px);
+  letter-spacing: 1.5px;
+}
+
+.owner-content h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.owner-intro {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+/* EXPERIENCE LIST */
+.owner-experience {
+  margin-top: 28px;
+  list-style: none;
+  padding: 0;
+}
+
+.owner-experience li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* CTA */
+.owner-btn {
+  display: inline-block;
+  margin-top: 36px;
+  background: var(--red);
+  color: var(--white);
+  padding: 14px 36px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+/* IMAGE */
+.owner-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .owner-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .owner-image {
+    order: -1;
+  }
+
+  .owner-content {
+    text-align: center;
+  }
+
+  .owner-experience {
+    display: inline-block;
+    text-align: left;
+  }
+}
