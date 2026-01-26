@@ -416,7 +416,6 @@ body {
   height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  filter: grayscale(100%);
   transition: filter 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
@@ -526,7 +525,6 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  filter: grayscale(100%);
 }
 
 /* =====================
