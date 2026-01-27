@@ -458,6 +458,92 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* =====================
+   BLOG PREVIEW
+===================== */
+.blogs {
+  padding: 100px 0;
+  background: var(--black);
+}
+
+.blogs-header {
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+.blogs-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 4vw, 44px);
+  letter-spacing: 2px;
+}
+
+.blogs-header p {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #cfcfcf;
+}
+
+/* GRID */
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.blog-card {
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 32px;
+}
+
+.blog-card h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.blog-card p {
+  margin: 16px 0;
+  font-size: 15px;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+.blog-card a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* CTA */
+.blogs-cta {
+  margin-top: 60px;
+}
+
+.blogs-btn {
+  background: var(--red);
+  color: var(--white);
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .blogs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blogs-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* =====================
    OWNER SECTION
 ===================== */
