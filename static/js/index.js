@@ -32,3 +32,15 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear();
   }
 });
+/* SERVICES ACCORDION */
+document.querySelectorAll(".service-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const box = btn.closest(".service-box");
+
+    document.querySelectorAll(".service-box").forEach((b) => {
+      if (b !== box) b.classList.remove("active");
+    });
+
+    box.classList.toggle("active");
+  });
+});
