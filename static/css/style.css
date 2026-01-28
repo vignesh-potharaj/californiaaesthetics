@@ -311,6 +311,11 @@ body.menu-open {
     display: flex;
   }
 }
+/* INNER PAGES: NAVBAR SHOULD BE SOLID */
+.inner-page .navbar {
+  background: rgba(0, 0, 0, 0.95);
+}
+
 /* =====================
    HERO SECTION
 ===================== */
