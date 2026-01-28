@@ -1,3 +1,6 @@
+console.log("index.js loaded");
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const menuToggle = document.getElementById("menuToggle");
