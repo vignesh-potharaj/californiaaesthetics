@@ -10,27 +10,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* MOBILE MENU TOGGLE */
-  if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("active");
-    });
-  }
-});
-document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menuToggle");
-  const mobileMenu = document.getElementById("mobileMenu");
-
-  if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("active");
-    });
+  /* MOBILE MENU */
+  if (!menuToggle || !mobileMenu) {
+    console.error("Hamburger elements missing");
+    return;
   }
 
-  const yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+  });
 });
 /* SERVICES ACCORDION */
 document.querySelectorAll(".service-toggle").forEach((btn) => {
