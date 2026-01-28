@@ -3,9 +3,16 @@
 }
 
 .services-intro {
+  padding-top: 80px;
   max-width: 800px;
   margin: 0 auto 100px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .services-intro{
+    margin-top: 150px;
+    padding: 10px;
+  }
 }
 
 .services-intro h1 {
