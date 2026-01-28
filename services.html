@@ -5,38 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services | California Aesthetic</title>
 
-  <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- GLOBAL + PAGE CSS -->
   <link rel="stylesheet" href="/static/css/style.css">
   <link rel="stylesheet" href="/static/css/services.css">
 </head>
 
-<body>
+<body class="inner-page">
 
-  <section class="services-page">
-    <div class="container">
-          <!-- NAVBAR -->
+  <!-- NAVBAR (TOP LEVEL ONLY) -->
   <header class="navbar">
     <div class="container nav-container">
 
       <div class="logo">
-        <a href="index.html">
+        <a href="/index.html">
           CALIFORNIA<br><span>AESTHETIC</span>
         </a>
       </div>
 
       <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="index.html#gallery">Gallery</a>
-        <a href="index.html#about">About</a>
-        <a href="blogs.html" class="active">Blogs</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="/index.html">Home</a>
+        <a href="/services.html" class="active">Services</a>
+        <a href="/blogs.html">Blogs</a>
+        <a href="/index.html#contact">Contact</a>
       </nav>
 
-      <a href="index.html#contact" class="cta-btn">Book Now</a>
+      <a href="/index.html#contact" class="cta-btn">Book Now</a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -44,113 +37,44 @@
     </div>
   </header>
 
+  <!-- MOBILE MENU (REQUIRED) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-backdrop"></div>
 
-        <body class="inner-page">
-            
-      <!-- INTRO -->
-      <header class="services-intro">
-        <h1>Our Services</h1>
-        <p>
-          California Aesthetic is one of the few places in Hyderabad offering
-          complete beauty, skin, hair, and aesthetic services under one roof.
-          Every treatment is performed by trained professionals with a strong
-          focus on hygiene, comfort, and visible results.
-        </p>
-      </header>
-
-      <!-- SERVICE ITEM -->
-      <div class="service-item">
-        <h2>Beauty, Skin & Hair Care</h2>
-        <img src="/static/images/1 (1).jpg" alt="Beauty Skin and Hair Care">
-        <p>
-          Comprehensive care designed to restore skin health and hair strength.
-          Treatments are personalized based on skin type, hair condition, and
-          lifestyle for long-lasting results.
-        </p>
+    <div class="mobile-drawer">
+      <div class="mobile-links">
+        <a href="/index.html">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/blogs.html">Blogs</a>
+        <a href="/index.html#contact">Contact</a>
+        <a href="/index.html#contact" class="mobile-cta">Book Appointment</a>
       </div>
+    </div>
+  </div>
 
-      <div class="service-item">
-        <h2>Aesthetic Treatments</h2>
-        <img src="/static/images/blogs/pexels-mart-production-7290118.jpg" alt="Aesthetic Treatments">
-        <p>
-          Advanced aesthetic solutions that enhance facial features while
-          maintaining a natural look. Every procedure begins with a detailed
-          consultation.
-        </p>
-      </div>
-
-      <div class="service-item featured">
-        <h2>Brazilian Waxing</h2>
-        <img src="/static/images/young-woman-leg-hair-removal-session-using-honey-health-beauty-spa.jpg" alt="Brazilian Waxing">
-        <p>
-          One of our most specialized services. California Aesthetic is among
-          the few salons in Hyderabad offering professional Brazilian waxing
-          with strict hygiene and expert care.
-        </p>
-      </div>
-
-      <div class="service-item">
-        <h2>Full Body Waxing</h2>
-        <img src="/static/images/beautiful-young-girl-beauty-salon.jpg" alt="Full Body Waxing">
-        <p>
-          Complete hair removal solutions delivering smooth and even results
-          across all body areas using high-quality products and techniques.
-        </p>
-      </div>
-
-      <div class="service-item">
-        <h2>Spa & Relaxation</h2>
-        <img src="/static/images/young-woman-having-face-massage-relaxing-spa-salon.jpg" alt="Spa and Relaxation">
-        <p>
-          Relaxing therapies designed to reduce stress, improve circulation,
-          and restore balance for both body and mind.
-        </p>
-      </div>
-
-      <div class="service-item">
-        <h2>Laser Hair Removal</h2>
-        <img src="/static/images/pexels-polina-tankilevitch-3738355.jpg" alt="Laser Hair Removal">
-        <p>
-          Advanced laser technology for long-term hair reduction with minimal
-          discomfort, tailored to different skin and hair types.
-        </p>
-      </div>
-
-      <div class="service-item">
-        <h2>Permanent Makeup</h2>
-        <img src="/static/images/pexels-reneterp-9743969.jpg" alt="Permanent Makeup">
-        <p>
-          Long-lasting makeup solutions that enhance facial features while
-          saving daily effort and maintaining a polished appearance.
-        </p>
-      </div>
-
-      <div class="service-item">
-        <h2>Korean Glossy Facial</h2>
-        <img src="/static/images/1 (2).jpg" alt="Korean Glossy Facial">
-        <p>
-          A hydration-focused facial that delivers luminous, glass-like skin,
-          improving texture and natural glow.
-        </p>
-      </div>
-
-      <div class="service-item">
-        <h2>Hydra Facial</h2>
-        <img src="/static/images/pexels-gustavo-fring-3985325.jpg" alt="Hydra Facial">
-        <p>
-          Deep cleansing and hydration treatment that rejuvenates the skin,
-          leaving it refreshed, smooth, and visibly healthier.
-        </p>
-      </div>
-
+  <!-- SERVICES HERO -->
+  <section class="services-hero">
+    <div class="services-hero-overlay"></div>
+    <div class="container services-hero-content">
+      <h1>Our Services</h1>
     </div>
   </section>
+
+  <!-- SERVICES CONTENT -->
+  <section class="services-page">
+    <div class="container">
+      <!-- your service-item blocks go here -->
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> California Aesthetic. All rights reserved.</p>
+      <p>© California Aesthetic. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- JS (MANDATORY) -->
+  <script src="/static/js/index.js" defer></script>
 </body>
 </html>
