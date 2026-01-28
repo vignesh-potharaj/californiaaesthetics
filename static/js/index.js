@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const menuToggle = document.getElementById("menuToggle");
   const mobileMenu = document.getElementById("mobileMenu");
-  const mobileLinks = document.querySelectorAll(".mobile-menu a");
+  const backdrop = document.querySelector(".mobile-backdrop");
+  const mobileLinks = document.querySelectorAll(".mobile-links a");
 
   /* NAVBAR SCROLL */
   if (navbar) {
@@ -31,17 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* CLOSE ON LINK CLICK */
-  mobileLinks.forEach((link) => {
+  mobileLinks.forEach(link => {
     link.addEventListener("click", closeMenu);
   });
 
-  /* ESC KEY SUPPORT */
+  /* CLOSE ON BACKDROP CLICK */
+  if (backdrop) {
+    backdrop.addEventListener("click", closeMenu);
+  }
+
+  /* ESC KEY */
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && mobileMenu.classList.contains("active")) {
       closeMenu();
     }
   });
 });
+
 /* SERVICES ACCORDION */
 document.querySelectorAll(".service-toggle").forEach((btn) => {
   btn.addEventListener("click", () => {
