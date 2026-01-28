@@ -126,3 +126,36 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.img-container {
+  width: 90%;
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 24px auto 32px; /* auto centers horizontally */
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* HERO IMAGE — toned down */
+.hero-img {
+  max-height: 460px;
+}
+
+/* CONTEXT IMAGE — smaller */
+.context-img {
+  max-height: 360px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-img {
+    max-height: 220px;
+  }
+
+  .context-img {
+    max-height: 180px;
+  }
+}
