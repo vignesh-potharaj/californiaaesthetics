@@ -56,13 +56,16 @@ body.menu-open {
 
 /* NAV CONTENT */
 .nav-container {
-  height: 72px;
+  height: 102px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* LOGO */
+.logo {
+  padding-top: 15px;
+}
 .logo a {
   text-decoration: none;
   color: var(--white);
@@ -73,7 +76,7 @@ body.menu-open {
 }
 
 .logo span {
-  font-size: 13px;
+  font-size: 45px;
   letter-spacing: 4px;
 }
 
@@ -356,17 +359,17 @@ body.menu-open {
 
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(32px, 7vw, 68px); /* LOWER MIN */
+  font-size: clamp(32px, 7vw, 43px); /* LOWER MIN */
   letter-spacing: 3px;
   line-height: 1.1;
-  text-align: center;
+  text-align: left;
 }
 
 
 .hero-content h1 span {
   display: block;
-  font-size: clamp(20px, 2vw, 26px);
-  letter-spacing: 8px;
+  font-size: clamp(100px, 2vw, 26px);
+  letter-spacing: 3px;
   margin-top: 12px;
 }
 
