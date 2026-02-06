@@ -161,7 +161,7 @@ body.menu-open {
   }
 }
 
-/* EXTREME CASE: ~250px */
+/* xtreme CASE: ~250px */
 @media (max-width: 280px) {
   .logo a {
     font-size: 14px;
